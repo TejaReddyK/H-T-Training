@@ -2,53 +2,51 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
-
-    <style>
-
-        form{
-            
-        }
-        label{
-
-        }
-    </style>
+    <title>Form</title>
+  <style>
+    label{
+      font-weight: bold;
+      font-size: large;
+      padding: 12px;
+      margin: auto;
+    }
+  </style>
 </head>
 <body>
-    
-<form action="">
-
-    <label for="" ><strong> First name: </strong></label> <input type="text"><br>
-    <label for=""><Enter last name:></label> <input type="text"><br>
-    <label for="">Enter address:</label> <textarea name="" id="" cols="30" rows="10"></textarea><br>
-    <label for="">programs attended:</label> <input type="checkbox" >
-    <label for="vehicle1"> HTml</label>
-    <input type="checkbox" >
-    <label for="vehicle2"> Java</label>
-    <input type="checkbox" >
-    <label for="vehicle3"> Oracle</label><br>   
-    <label for="">Seclect the stream you belong to</label>  <input type="radio" name="Branch" value="CSE">CSE
-    <input type="radio" name="Branch" value="IT">IT
-    <input type="radio" name="Branch" value="ECE">ECE
-    <input type="radio" name="Branch" value="EEE">EEE <br>
-
-    <label for="">Which training programm would you like to attend</label>
-    <select name="" id="">
-        <option value="">Java</option>
-        <option value="">Html</option>
-        <option value="">CSS</option>
-    </select>
-    <br>
-    <label for="">Upload your resume</label> <input type="file" name="" id="">
-
-<br><br>
-
-    <button>save</button> <button>exit</button>  <button>reset</button>
-
+<form action="action.html">
+  <label>Enter First Name:   </label>
+  <input type="text" placeholder="Enter First Name" required/><br>
+  <label>Enter lastname:   </label>
+  <input type="text" placeholder="Enter last name" required/><br>
+  <label>Enter Address:  </label>
+  <textarea rows="3"></textarea>
+  <br>
+  <label>Program Attended: </label>
+  <input type="checkbox"/>HTML
+  <input type="checkbox"/> Java
+  <input type="checkbox"/> Oracle
+  <br>
+  <label>Select the stream you belong to :</label>
+  <input type="radio"/> Mtech
+  <input type="radio"/> EEE
+  <input type="radio"/> CS
+  <input type="radio"/> IT
+  <br>
+  <label>Which training program  would you like to attend </label>
+  <select multiple size="1" name="pref">
+    <option value="ih" selected>html</option>
+    <option value="js">Javascript</option>
+    <option value="oracle">Angular</option>
+    <option value="jv">JAVA
+    </option>
+  </select>
+  <br>
+  <label>Upload your resume</label>
+  <input type="file"/>
+  <br>
+  <input type="button" name="exit" value="exit"/>
+  <input type="reset" name="reset"/>
+  <input type="submit" name="submit">
 </form>
-
 </body>
 </html>
