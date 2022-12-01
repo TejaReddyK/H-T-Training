@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+       div::before{
+            content: '*';
+            color:red;
+
+
+       }
+       ul li:first-child{
+        background-color: palevioletred;
+       }
+
+        body{
+            color: red;
+        }
+
+        h1{
+            color: yellow;
+        }
+
+        div{
+            color: blue;
+            background-color: pink;
+        }
+        div:hover{
+            font-style: italic;
+        }
+        p{
+            writing-mode: vertical-lr;
+        }
+
+    </style>
+
+
+</head>
+<body>
+    <h1>This is Heading</h1>
+
+    <h2>Hover in CSS</h2>
+
+    <div>Text will change when you hover over it</div>
+
+    <p>This is a New Paragraph</p>
+    
+
+<ul>
+    <li>apple</li>
+    <li>mango</li>
+    <li>strawberry</li>
+</ul>
+</body>
+</html>
