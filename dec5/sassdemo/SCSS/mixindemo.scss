@@ -1,0 +1,63 @@
+
+@mixin colormix{
+    color:purple;
+
+}
+
+@mixin colormix2{
+    color:#AF3445;
+}
+
+@mixin dynamicMixin($size,$style,$color){
+    border : $size $style $color;
+}
+
+div {
+    width: 70px;
+    height: 70px;
+    background-color: red;
+    position: relative;
+    animation-name: example;
+    animation-duration: 6s;
+  }
+
+  
+@keyframes example {
+    // 0%   {background-color:red; left:0px; top:0px;}
+    // 25%  {background-color:yellow; left:200px; top:0px;}
+
+    0%  {
+    @include colormix;
+    left: 0px;
+    top:0px;
+    background-color: red}
+
+
+    25%  {
+        @include colormix;
+        left: 200px;
+        top:0px;
+        background-color: aqua;}
+
+
+
+        50%  {
+            @include colormix;
+            left: 200px;
+            top:200px;
+            background-color: blue;}
+
+            75%  {
+                @include colormix;
+                left: 0px;
+                top:200px;
+                background-color: green;}
+
+
+                100%  {
+                    @include colormix;
+                    left: 0px;
+                    top:0px;
+                    background-color: black;}
+
+                }
