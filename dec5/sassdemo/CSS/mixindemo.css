@@ -1,0 +1,43 @@
+div {
+  width: 70px;
+  height: 70px;
+  background-color: red;
+  position: relative;
+  animation-name: example;
+  animation-duration: 6s;
+}
+
+@keyframes example {
+  0% {
+    color: purple;
+    left: 0px;
+    top: 0px;
+    background-color: red;
+  }
+  25% {
+    color: purple;
+    left: 200px;
+    top: 0px;
+    background-color: aqua;
+  }
+  50% {
+    color: purple;
+    left: 200px;
+    top: 200px;
+    background-color: blue;
+  }
+  75% {
+    color: purple;
+    left: 0px;
+    top: 200px;
+    background-color: green;
+  }
+  100% {
+    color: purple;
+    left: 0px;
+    top: 0px;
+    background-color: black;
+  }
+}
+
+/*# sourceMappingURL=mixin.css.map */
