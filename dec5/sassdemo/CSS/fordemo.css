@@ -1,0 +1,29 @@
+.p1 {
+  padding: 20px;
+  color: rgb(200, 10, 26);
+  background-color: aquamarine;
+  width: 100px;
+}
+
+.p2 {
+  padding: 40px;
+  color: rgb(200, 10, 26);
+  background-color: aquamarine;
+  width: 200px;
+}
+
+.p3 {
+  padding: 60px;
+  color: rgb(200, 10, 26);
+  background-color: aquamarine;
+  width: 300px;
+}
+
+.p4 {
+  padding: 80px;
+  color: rgb(200, 10, 26);
+  background-color: aquamarine;
+  width: 400px;
+}
+
+/*# sourceMappingURL=fordemo.css.map */
