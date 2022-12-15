@@ -1,46 +1,145 @@
+export {}
 
-enum categories{
+enum Size  {
 
-    cloth='cloth',
-    accessories='accessories',
-    mobiles='mobiles'
+    small='small',
+
+    medium='medium',
+
+    large='large'
+
 }
 
-class Product{
-    id:number;
-    name:string;
-    price:number;
-    category: categories
+enum Toppings  {
 
-    constructor(id, name, price, category){
-        this.id=id;
-        this.name=name;
-        this.price=price;
-        this.category=category;
+    cheese='cheese',
+
+    nuts='nuts',
+
+    paneer='paneer'
+
+}
+
+interface Pizza{
+
+    id:number,
+
+    base: string,
+
+    size:Size,
+
+    toppings:Toppings
+
+}
+
+
+
+let pizza1:Pizza;
+
+
+
+pizza1={
+
+    id:101,
+
+    base : 'pan',
+    
+    size:Size.medium,
+
+    toppings:Toppings.paneer
+
+
+
+}
+
+let pizza2:Pizza;
+
+
+
+pizza2={
+
+    id:102,
+
+    base : 'big pan',
+
+    size:Size.large,
+
+    toppings:Toppings.cheese
+
+
+
+}
+
+console.log(pizza1);
+
+console.log(pizza2);
+
+
+
+function checkSize(pizza:Pizza){
+
+    switch(pizza1.size){
+
+        case Size.small:
+
+            console.log("pizza of small size will be delivered");
+
+            break;
+
+       
+
+        case Size.medium:
+
+            console.log("pizza of medium size will be delivered");
+
+            break;
+
+       
+
+        case Size.large:
+
+            console.log("pizza of large size will be delivered");
+
+            break;
+
+       
+
     }
 
 }
 
+function checkToppings(pizza:Pizza){
 
-class ShoppingCart{
-    products: Map<Product, number>;
+    switch(pizza1.toppings){
 
-    constructor(map:Map<Product, number>){
-        this.products = map;
+        case Toppings.cheese:
+
+            console.log("cheese topping is selected for pizza");
+
+            break;
+
+       
+
+        case Toppings.nuts:
+
+            console.log("cheese topping is selected for pizza");
+
+            break;
+
+       
+
+        case Toppings.paneer:
+
+            console.log("cheese topping is selected for pizza");
+
+            break;
+
+       
+
     }
 
-    totalPrice(){
-        let price=0;
-        this.products.forEach(product=>{
-            console.log(product);
-        })
-    }
 }
 
-let mymap= new Map();
+checkSize(pizza1);
 
-let p1 = new Product(1, 'jeans', 900, categories.cloth);
-mymap.set(p1, 1);
-
-let cart = new ShoppingCart(mymap);
-cart.totalPrice();
+checkToppings(pizza1);
